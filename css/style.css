@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+li{
+    list-style: none;
+   
+}
 a{
     text-decoration: none;
 }
 body{
-
+    width: 1225px;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -18,8 +26,12 @@ body{
     width: 100%;
 }
 .selections{
-    width: 100%;
+    width: 950px;
 
+}
+.wrapper{
+    width: 780px;
+    margin: auto;
 }
 .nav{
     background: #353541;
@@ -32,7 +44,7 @@ body{
     height: 220px;
     color:#fff;
     background: rgb(53,53,65);
-    background: linear-gradient(0deg, rgba(53,53,65,1) 0%, rgba(45,58,74,1) 50%, rgba(53,53,65,1) 100%);
+    background: linear-gradient(0deg, rgba(53,53,65,1) 0%, rgb(78, 89, 102) 50%, rgba(53,53,65,1) 100%);
 }
 .profile h3{
     color:#fff;
@@ -80,6 +92,7 @@ body{
 }
 .first-selection button{
     margin-top: 50px;
+    cursor: pointer;
     width: 170px;
     height: 50px;
     text-align: center;
@@ -92,4 +105,135 @@ body{
 
 .about{
     display: flex;
+    justify-content: space-between;
+    padding: 80px 20px 115px;
+    border-bottom: 1px solid #b8b8bd;
 }
+.about-info{
+    width: 370px;
+}
+.about-info h2{
+    position: relative;
+    margin-top: 40px;
+    font-size: 32px;
+}
+.about-info h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fb6470;
+    width: 75px;
+    height: 2px;
+    bottom: -20px;
+}
+.about-info p{
+    margin-top: 70px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #b8b8bd;
+}
+.about-info ul{
+    margin-top: 80px;
+}
+.about-description{
+    font-weight: 600;
+    line-height: 50px;
+    font-size: 18px;
+    font-size: 18px;
+}
+.about-description + .about-description{
+    border-top: 1px solid #b8b8bd;
+}
+
+.about-photo{
+    width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.about-photo-img{
+    max-width: 380px;
+}
+
+
+
+.work, .education{
+    padding: 80px 10px;
+    border-bottom: 1px solid #b8b8bd;
+}
+.work h2, .education h2{
+    position: relative;
+}
+.education h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fb6470;
+    width: 75px;
+    height: 2px;
+    bottom: -20px;
+}
+.work h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fb6470;
+    width: 75px;
+    height: 2px;
+    bottom: -20px;
+}
+
+.work-dialogs, .education-dialogs{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+.dialogs-left{
+    padding: 80px 60px 80px 0;
+    border-right: 1px solid #b8b8bd;
+}
+.dialogs-right{
+    padding: 0 0 0 60px;
+}
+
+.dialogs-left-item, .dialogs-right-item{
+    padding: 15px 20px 20px;
+    position: relative;
+    background-color: #353541;
+    border-radius: 5px;
+}
+.dialogs-right-item + .dialogs-right-item, .dialogs-left-item + .dialogs-left-item{
+    margin-top: 155px;
+}
+
+.dialogs-left-item img{
+    position: absolute;
+    right: -76px;
+    bottom:0;
+}
+
+.dialogs-left-item::after{
+    content: '';
+    position: absolute;
+    right: -25px;
+    bottom: 20px;
+    border: 25px solid transparent;
+    border-left: 25px solid #353541;
+    transform: rotate(-90deg);
+}
+.dialogs-right-item img{
+    position: absolute;
+    left: -76px;
+    top:0;
+}
+
+.dialogs-right-item::after{
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 20px;
+    border: 25px solid transparent;
+    border-left: 25px solid #353541;
+    transform: rotate(90deg);
+}
+
+
