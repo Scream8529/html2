@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+
+}
+
+
+
+
+.content{
+    display: flex;
+    width: 100%;
+}
+.selections{
+    width: 100%;
+
+}
+.nav{
+    background: #353541;
+    width: 275px;
+    
+}
+.profile{
+    position: relative;
+    padding: 20px 30px;
+    height: 220px;
+    color:#fff;
+    background: rgb(53,53,65);
+    background: linear-gradient(0deg, rgba(53,53,65,1) 0%, rgba(45,58,74,1) 50%, rgba(53,53,65,1) 100%);
+}
+.profile h3{
+    color:#fff;
+}
+
+.profile-info{
+    max-width: 215px;
+    position: absolute;
+    bottom: 20px;
+}
+.profile-name{
+    font-size: 32px;
+}
+.profile-discription{
+    font-size: 16px;
+}
+.navMenu-link{
+    display: block;
+    border-top: 1px solid #242431 ;
+    color: #fff;
+    font-size: 22px;
+    text-align: left;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+
+
+.first-selection{
+    background: #353541;
+    color: #fff;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    text-align: center;
+}
+.first-selection h1{
+    font-size: 48px;
+}
+.first-selection p{
+    color: #b8b8bd;
+    max-width: 550px;
+    margin: 5px auto 0;
+    font-size: 14px;
+    line-height: 29px;
+}
+.first-selection button{
+    margin-top: 50px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background-color: #fb6470;
+    color: #fff;
+    font-size: 22px;
+}
+
+.about{
+    display: flex;
+}
