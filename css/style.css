@@ -141,6 +141,9 @@ body{
     font-size: 18px;
     font-size: 18px;
 }
+.about-description span{
+    font-weight: 500;
+}
 .about-description + .about-description{
     border-top: 1px solid #b8b8bd;
 }
@@ -156,12 +159,21 @@ body{
 
 
 
-.work, .education{
+.work, .education, .mySkils{
     padding: 80px 10px;
     border-bottom: 1px solid #b8b8bd;
 }
-.work h2, .education h2{
+.work h2, .education h2, .mySkils h2{
     position: relative;
+}
+.mySkils h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fb6470;
+    width: 75px;
+    height: 2px;
+    bottom: -20px;
 }
 .education h2::after{
     content: "";
@@ -196,21 +208,33 @@ body{
 }
 
 .dialogs-left-item, .dialogs-right-item{
-    padding: 15px 20px 20px;
+    padding: 15px 25px 20px;
     position: relative;
     background-color: #353541;
     border-radius: 5px;
+    color: #a1a1a6;
+    
 }
 .dialogs-right-item + .dialogs-right-item, .dialogs-left-item + .dialogs-left-item{
     margin-top: 155px;
 }
-
+.dialog-item-title{
+    color: #fff;
+}
+.dialog-item-title span{
+    color: #a1a1a6;
+}
 .dialogs-left-item img{
     position: absolute;
     right: -76px;
     bottom:0;
 }
-
+.dialogs-item-date{
+    font-size:16px;
+    color: #fb6470;
+    margin-top:5px;
+    margin-bottom:10px;
+}
 .dialogs-left-item::after{
     content: '';
     position: absolute;
